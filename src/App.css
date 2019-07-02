@@ -1,33 +1,68 @@
-.App {
+.MuiAppBar-colorPrimary .app-header {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.MuiAppBar-colorPrimary.app-bar {
+  background-color: #6d5a7c
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filter-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.tutor-icons .MuiSvgIcon-colorSecondary {
+  color: #f9717f
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tutor-icons .MuiSvgIcon-colorPrimary {
+  color: #f9717f
+}
+
+.filter-bar .filter-item {
+  margin-right: 1.5em;
+  min-width: 5em;
+  max-width: 7em;
+  margin-bottom: 1em;
+}
+
+.filter-bar .MuiButton-containedPrimary {
+  background-color: #41E2C4
+}
+
+.filter-bar .filter-item.filter-subject {
+  min-width: 9em;
+  max-width: 20em;
+}
+
+.tutor-experience {
+  height: 15em;
+}
+
+.tutor-experience.expanded {
+  height: 100%;
+}
+
+.tutor-photo {
+  height: 0;
+  padding-top: 75%;
+}
+
+.tutor-heading {
+  height: 3em;
+}
+
+.tutor-expand.expanded {
+  transform: rotate(180deg);
+}
+
+.MuiIconButton-root.tutor-expand {
+  margin-left: auto;
+}
+
+.search-pagination .pagination-btn {
+  margin-right: 1em;
 }
